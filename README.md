@@ -11,8 +11,8 @@ Python==3.5.4.
 scikit-learn==0.19.1. 
 
 # Training and Testing
-python eval.py will train the model and test the target data over 5 iteratioons.
-Note that the result may be a bit higher or lower than the one reported in the paper due to some randomness issues.
+python eval.py will train the model and test the target data over 5 iterations.
+Note that the result may be a bit higher or lower than the one reported in the paper due to some randomness issues but should converge to that value over longer iterations.
 
 # Citation
 @article{owoeye2019learning,  
