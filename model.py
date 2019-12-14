@@ -135,10 +135,6 @@ def cre_newmodel(Xtraina, ytraina, Xtrainb, ytrainb,h1,h2,h3,h4,h5,h6,h7,h8,c1,c
     hist_df = np.array(clf11.history['loss'])
     cd1 = (hist_df[19])
     
-    
-    
-    
-    
     nb_samples = Xtrainb.shape[0] - look_back
     Xtrain2 = np.zeros((nb_samples,look_back,num_features))
     
@@ -153,11 +149,8 @@ def cre_newmodel(Xtraina, ytraina, Xtrainb, ytrainb,h1,h2,h3,h4,h5,h6,h7,h8,c1,c
 
     model = Sequential()
     opt = Adam(lr=0.001)
-    #model.add(LSTM(4, input_shape=(None, num_features), activation = 'tanh', return_sequences=True, kernel_initializer='random_uniform'))
     model.add(LSTM(4, input_shape=(None, num_features), return_sequences=True,kernel_initializer='random_uniform'))
-    #model.add(Bidirectional(LSTM(4,return_sequences=True), input_shape=(None, num_features)))
     model.add(TimeDistributed(Dense(num_class,activation = 'tanh')))
-    #model.add(Dropout(0.2))
     model.add(Activation('softmax'))
 
 
@@ -286,12 +279,6 @@ def te_class(Xtest, ytest):
 
 
 #########################################################################################
-
-
-
-
-
-
 def train_class(Xtest, ytest, clf1 , clf2, po, pn, l1, l2):
 
     acc_ = 0
@@ -476,14 +463,10 @@ def ctrain(Xtraina,ytraina):
         one_hot_labels2[i] = ytra[y_position,:num_class]
 
     
-    #Xtrain2 = Xtraina;one_hot_labels2 = ytraina
     model = Sequential()
     opt = Adam(lr=0.001)
-    #model.add(LSTM(4,input_shape=(None, num_features), activation = 'tanh', return_sequences=True))
     model.add(LSTM(4,input_shape=(None, num_features), return_sequences=True))
-    #model.add(Bidirectional(LSTM(4,return_sequences=True), input_shape=(None, num_features)))
     model.add(TimeDistributed(Dense(num_class,activation = 'tanh')))
-    #model.add(Dropout(0.2))
     model.add(Activation('softmax'))
 
 
@@ -533,8 +516,6 @@ def LSTM_MYAP_TRAIN(Xtrain,ytrain):
     
     gmm1 = mixture.GaussianMixture(n_components = 2,covariance_type='full').fit(Xtrain)
     nm1 = gmm1.predict(Xtrain)
-    #kmeans = KMeans(n_clusters=2, random_state=0).fit(Xtrain)
-    #nm1 = kmeans.labels_
     nm1 = nm1.reshape(len(nm1),1)
     Xtrain = np.concatenate((Xtrain, nm1),axis = 1);
     Xtrainn = Xtrain ###
