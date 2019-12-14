@@ -15,9 +15,9 @@ python eval.py will train the model and test the target data over 5 iteratioons.
 Note that the result may be a bit higher or lower than the one reported in the paper due to some randomness issues.
 
 # Citation
-@article{owoeye2019learning,
-  title={Learning to smell for wellness},
-  author={Owoeye, Kehinde},
-  journal={NeurIPS Joint Workshop on AI for Social Good},
-  year={2019}
+@article{owoeye2019learning,  
+  title={Learning to smell for wellness},  
+  author={Owoeye, Kehinde},  
+  journal={NeurIPS Joint Workshop on AI for Social Good},  
+  year={2019}. 
 }
