@@ -1,8 +1,6 @@
 
 import numpy as np
 import numpy.matlib
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import axes3d, Axes3D #<-- Note the capitalization!
 import math
 import xlrd
 import xlsxwriter
