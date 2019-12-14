@@ -5,10 +5,10 @@ This repository contains the code to reproduce the results in the paper "Learnin
 
 
 # Dependencies
-Tensorflow==1.5.0
-Keras==2.1.2
-Python==3.5.4
-scikit-learn==0.19.1
+Tensorflow==1.5.0. 
+Keras==2.1.2. 
+Python==3.5.4. 
+scikit-learn==0.19.1. 
 
 # Training and Testing
 python eval.py will train the model and test the target data over 5 iteratioons.
