@@ -8,5 +8,16 @@ This repository contains the code to reproduce the results in the paper "Learnin
 Tensorflow==1.5.0
 Keras==2.1.2
 Python==3.5.4
+scikit-learn==0.19.1
 
 # Training and Testing
+python eval.py will train the model and test the target data over 5 iteratioons.
+Note that the result may be a bit higher or lower than the one reported in the paper due to some randomness issues.
+
+# Citation
+@article{owoeye2019learning,
+  title={Learning to smell for wellness},
+  author={Owoeye, Kehinde},
+  journal={NeurIPS Joint Workshop on AI for Social Good},
+  year={2019}
+}
