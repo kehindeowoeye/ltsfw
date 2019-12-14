@@ -6,5 +6,7 @@ This repository contains the code to reproduce the results in the paper "Learnin
 
 # Dependencies
 Tensorflow==1.5.0
-keras==2.1.2
+Keras==2.1.2
 Python==3.5.4
+
+# Training and Testing
