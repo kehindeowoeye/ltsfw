@@ -3,8 +3,6 @@ from keras.layers import Dense, Activation
 from keras import objectives
 import numpy as np
 import numpy.matlib
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import axes3d, Axes3D #<-- Note the capitalization!
 import pandas as pd
 import keras
 from keras.layers import TimeDistributed
