@@ -8,7 +8,7 @@ Datasets can be downloaded from the links described in the paper.
 
 # Dependencies
 Tensorflow==1.5.0.  
-Keras==2.1.2.     
+Keras==2.1.2.      
 Python==3.5.4.     
 scikit-learn==0.19.1.     
 
